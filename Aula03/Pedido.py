@@ -1,11 +1,13 @@
 from Produto import Produto
 from Pessoa import Pessoa
+
 class Pedido:
     def __init__(self, end, cliente = Pessoa("Anônimo") ):
         self.id = None
         self.end = end
         self.cliente = cliente
         self.produtos = []
+        
     def addProduto(self , prod ):
         self.produtos.append( prod )
         soma = 0 
